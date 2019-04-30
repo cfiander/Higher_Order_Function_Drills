@@ -109,3 +109,9 @@ console.log(turtleArray.filter(isNegative));
 function isNegative(value) {
     return value[0] >= 0 && value[1] >= 0;
   }
+
+function addArray(value) {
+    return Math.abs(value[0]) + Math.abs(value[1]);
+}
+
+console.log(turtleArray.map(addArray));
