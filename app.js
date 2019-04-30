@@ -101,3 +101,11 @@ const tornadoWarning = hazardWarningCreator('Tornado on the field');
 rocksWarning('Main St and Pacific Ave');
 rocksWarning('Centinela Ave and Olympic Blvd');
 tornadoWarning('Oklahoma');
+
+turtleArray = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+console.log(turtleArray.filter(isNegative));
+
+function isNegative(value) {
+    return value[0] >= 0 && value[1] >= 0;
+  }
