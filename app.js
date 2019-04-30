@@ -24,3 +24,12 @@ function max(numbers) {
  
 console.log(max([5, 8, 11, 2]));
 console.log(min([5, 8, 11, 2]));
+
+const average = function(array) {
+    let total = 0;
+    array.forEach( function(element) {
+        total += element;
+    }); return total/array.length;
+}
+
+console.log(average([5, 8, 11, 2]));
