@@ -115,3 +115,15 @@ function addArray(value) {
 }
 
 console.log(turtleArray.map(addArray));
+
+const turtleSteps = turtleArray.map(addArray);
+
+function howManySteps(value,num) {
+    console.log( `Movement #${num}: ${value} steps` );
+}
+
+let i = 1;
+turtleSteps.forEach(function(element) {
+    howManySteps(element, i);
+    i ++;
+});
