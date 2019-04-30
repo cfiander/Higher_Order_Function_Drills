@@ -127,3 +127,18 @@ turtleSteps.forEach(function(element) {
     howManySteps(element, i);
     i ++;
 });
+
+function decode(string) {
+    return string.split(' ')
+    .reduce((acc, element) => {
+        if (element.length === 3) {
+            return acc += ' ';
+        } else {
+            return acc += element[element.length-1].toUpperCase();
+        }
+    },'')
+}
+
+const testString ="noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest";
+
+console.log(decode(testString));
